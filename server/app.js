@@ -11,7 +11,7 @@ app.use("/api/blog", blogRouter);
 app.use("/api/user", router);
 const PORT = process.env.PORT || 5000;
 mongoose
-  .connect("mongodb+srv://SamarthBagga:Jaishriram@cluster0.sepnxrj.mongodb.net/?retryWrites=true&w=majority")
+  .connect("//mongo-connect-url")
   .then(() =>
     app.listen(PORT, () => {
       console.log("server is running");
